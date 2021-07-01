@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/511bb41768.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/nlz4fii.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/javascript.js"></script>
+</head>
+<body>
+	<header>
+		<a class="logo" href="index.html"><div></div></a>
+	
+		<nav class="topnav" id="topmenu">
+			<ul class="links">
+				<li><a href="index.html"><h4>Home</h4></a></li>
+				<li><a href="about.html"><h4>About</h4></a></li>
+				<li><a href="services.html"><h4>Services</h4></a></li>
+				<li><a href="blog.html"><h4>Blog</h4></a></li>
+				<li>
+					<div class="dropdown">
+						<button onclick="window.location.href='shop.html';" class="shopdropbtn">Shop<i class="fas fa-chevron-down"></i></button>
+
+						<div class="dropdown-links">
+   			 				<a href="clothing.html"><h4>Clothing</h4></a>
+   			 				<a href="beauty.html"><h4>Beauty</h4></a>
+   			 				<a href="homeandliving.html"><h4>Home and Living</h4></a>
+
+ 					 	</div>
+					</div>
+				</li>
+
+				<li><a href="contact.html"><h4 class="currentpage">Contact</h4></a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a>
+		</nav>
+
+	</header>
+
+
+	<main>
+
+		
+
+		<div class="contactform">
+			<h1>Lets Start a korero! (conversation)</h1>
+
+			<form>
+		
+				<div class="contactleft">
+					<fieldset class="personal_details">
+						<h2>Ingoa (Name): </h2><input type="text" name="name"> <br>
+						<h2>Pronouns: </h2><input type="text" name="pronoun"> <br>
+					</fieldset>
+				</div>
+
+
+				<div class="contactright">
+					<fieldset class="subject">
+						<h5> Subject </h5> <br>
+						<input type="radio" name="subject" value="Workshops"> <h2>Workshops</h2> <br>
+						<input type="radio" name="gender" value="events"><h2>Events</h2><br>
+						<input type="radio" name="gender" value="other"><h2>Other</h2><br>
+					</fieldset>
+
+
+	
+					<fieldset class="contactmessage">
+						<legend><h5>Message</h5></legend>
+						<textarea name="message"></textarea>
+					</fieldset>
+				</div>
+
+				
+
+			</form>
+
+			<div class="sendbutton">
+					<input type="submit" name="submit" value="Send" class="sendbutton1"><br>
+			</div>
+		</div>
+
+		<button onclick="topFunction()" id="backtotop" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
+			<script>//Get the button:
+			mybutton = document.getElementById("backtotop");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+  			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   			 mybutton.style.display = "block";
+ 			 } else {
+   			 mybutton.style.display = "none";
+ 			 }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+ 			 document.body.scrollTop = 0; // For Safari
+  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}</script>
+
+	</main>
+
+	<footer>
+		<div class="footer">
+			<div class="socials">
+
+				<a href="https://www.instagram.com/ethicallykate/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+
+				<a href="https://www.facebook.com/ethicallykate/" target="_blank">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+
+   			</div>
+
+   			<div class="emailformbox">
+   		
+				<div class="emailformdesc">
+					<h3>Join the newletter for more updates in our adventures and learnings.</h3>
+				</div>
+
+				<fieldset class="email_form">
+					<div class="formbox">
+						<p>Ingoa-(Name):</p>
+						<input type="text" name="name">
+					</div>
+
+					<div class="formbox">
+						<p>Email:</p>
+						<input type="text" name="email"> 
+					</div>
+
+					<div class="newslettersend">
+						<input type="submit" name="submit" value="Send" class="sendbutton1"><br>
+					</div>
+
+
+				</fieldset>
+			</div>
+			<div class="copyright"><p>Copyright Ethically Kate 2021</p></div>
+		</div>
+
+	</footer>
+	
+</body>
+</html>

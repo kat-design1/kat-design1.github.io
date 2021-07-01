@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ethical Shopping</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/511bb41768.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/nlz4fii.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/javascript.js"></script>
+</head>
+<body>
+	<header>
+		<a class="logo" href="index.html"><div></div></a>
+			
+		<nav class="topnav" id="topmenu">
+			<ul class="links">
+				<li><a href="index.html"><h4>Home</h4></a></li>
+				<li><a href="about.html"><h4>About</h4></a></li>
+				<li><a href="services.html"><h4>Services</h4></a></li>
+				<li><a href="blog.html"><h4>Blog</h4></a></li>
+				<li>
+					<div class="dropdown">
+						<button onclick="window.location.href='shop.html';" class="shopdropbtn currentpage">Shop<i class="fas fa-chevron-down"></i></button>
+
+						<div class="dropdown-links">
+   			 				<a href="clothing.html"><h4>Clothing</h4></a>
+   			 				<a href="beauty.html"><h4>Beauty</h4></a>
+   			 				<a href="homeandliving.html"><h4>Home and Living</h4></a>
+
+ 					 	</div>
+					</div>
+				</li>
+				<li><a href="contact.html"><h4>Contact</h4></a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a>
+		</nav>
+
+	</header>
+
+
+	<main class="shopmain">
+		
+
+		<div class="shopoptions">
+
+			<div class="shopopening">
+
+			<div class="shoptitle"><h3>Welcome to your ethical shopping directory!</h3></div>
+
+			<div class="shopdesc">
+				<p>
+					 All brands have been worn and tested by myself, a friend, or family member. Remember not to buy anything unless its a NEED not a WANT. The most sustainable option is usually the one we already have! </p>
+
+					<h6>Note: some links are affiliate links. I will earn a small commission if you purchase using the code or by clicking that link.</h6>
+			</div>
+
+
+		</div>
+
+			<div class="albumn">
+					<a href="clothing.html">
+						<div id="clothingshop" class="imgbox"></div>
+						<div class="brandname"><h5>Clothing</h5></div>
+					</a>
+
+					<a href="beauty.html">
+						<div id="beautyshop" class="imgbox"></div>
+						<div class="brandname"><h5>Beauty</h5></div>
+					</a>
+
+					<a href="homeandliving.html">
+						<div id="handlshop" class="imgbox"></div>
+						<div class="brandname"><h5>Home and Living</h5></div>
+					</a>
+			</div>
+
+			<div class="exploretitle"> 
+				<a href="blog.html"><h3>Explore my learnings</h3></a>
+			</div>
+		
+		</div>
+
+		<button onclick="topFunction()" id="backtotop" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
+			<script>//Get the button:
+			mybutton = document.getElementById("backtotop");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+  			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   			 mybutton.style.display = "block";
+ 			 } else {
+   			 mybutton.style.display = "none";
+ 			 }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+ 			 document.body.scrollTop = 0; // For Safari
+  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}</script>
+
+	</main>
+
+	<footer>
+		<div class="footer">
+			<div class="socials">
+
+				<a href="https://www.instagram.com/ethicallykate/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+
+				<a href="https://www.facebook.com/ethicallykate/" target="_blank">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+
+   			</div>
+
+   			<div class="emailformbox">
+   		
+				
+				<div class="emailformdesc">
+					<h3>Join the newletter for more updates in our adventures and learnings.</h3>
+				</div>
+
+				<fieldset class="email_form">
+					<div class="formbox">
+						<p>Ingoa-(Name):</p>
+						<input type="text" name="name">
+					</div>
+
+					<div class="formbox">
+						<p>Email:</p>
+						<input type="text" name="email"> 
+					</div>
+					<div class="newslettersend">
+						<input type="submit" name="submit" value="Send" class="sendbutton1"><br>
+					</div>
+
+
+				</fieldset>
+			</div>
+			<div class="copyright"><p>Copyright Ethically Kate 2021</p></div>
+		</div>
+
+	</footer>
+	
+</body>
+</html>
