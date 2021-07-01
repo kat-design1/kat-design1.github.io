@@ -1,0 +1,1470 @@
+
+/*Ethically Kate Style sheet*/
+
+/*general Styling.........................*/
+	body {
+		font-family: sans-serif;
+		font-size: 20px;
+		padding:0;
+		margin:0;
+		background-color: white;
+	}
+
+	#backtotop {
+  		position: fixed;
+  		background-color: white;
+  		border-radius: 75%; 
+  		bottom: 5vh;
+  		right: 2vw;
+  		z-index: 99;
+  		border: none;
+  		outline: none;
+  		cursor: pointer;
+  		
+  		
+  		
+	}
+
+	#backtotop:hover {
+  		background-color: transparent; 
+  		border-radius:100%;
+  		bottom: 6vh;
+  		right: 1.8vw;
+
+  		
+	}
+
+	.fa-arrow-alt-circle-up {
+		font-size: 4em;
+		color: #7fcc9b;
+		text-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+
+	}
+
+	.fa-arrow-alt-circle-up:hover{
+		font-size:4.5em;
+		
+	}
+/*general Styling ends.........................*/
+
+
+/*.... reset sheet.............................*/
+
+	ul, li {
+		list-style: none;
+	}
+
+	h1,h2,h3,h4,h5,h6,p {
+		margin:0;
+		color: #466752;
+	}
+
+	a {
+		text-decoration:none;
+	}
+
+/*.... reset sheet ends.............................*/
+
+
+/*header styling......................*/
+	header {
+		display: flex;
+		flex-direction: row;
+		height: 34vh;
+		width: 100%;
+		background-color: white;
+	}
+
+	.logo {
+		background-image:url(../img/vectorlogo.png);
+		width: 20vw;
+		height:25vh;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 2%;
+		position: absolute;
+		right: 0;
+		left: 12%;
+	}
+
+	.icon {
+		display: none;
+	}
+
+	.fa-bars {
+		font-size: 3em;
+		color: #7fcc9b;
+		margin-left: 25vw;
+	}
+
+	.links {
+
+	}
+
+	nav {
+		margin-left: 55%;
+		margin-top: 7%;
+	}
+	a .currentpage {
+		/*border-bottom: solid 2px #70A483;
+		border-top: solid 2px #70A483;*/
+	}
+	nav ul  {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 3%;
+		align-items: baseline;
+	}
+
+	nav ul li {
+		padding-right: 5%;
+		list-style: none;
+	}
+
+	nav ul li a {
+		color:#466752;
+	}
+
+	nav ul li a h4.currentpage{
+		color: #7FCC9B;
+		font-size: 1.5em;	
+		text-decoration: underline;	
+	}
+
+	.currentpage{
+		color: #7FCC9B!important;
+		font-size: 1.3em!important; 	
+		text-decoration: underline;	
+	}
+
+	nav ul li a h4:hover{
+		color: #7FCC9B;
+	}
+
+
+	.fa-chevron-down {
+		font-size: .6em;
+		font-weight: 200;
+		color: #7FCC9B;
+		padding-top: 10px;
+		padding-left: 5px;
+	}
+	/* Dropdown Button */
+	.shopdropbtn {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		font-size: 24px;
+		font-family: p22-underground-pc, sans-serif;
+		font-weight: 400;
+		color: #466752;
+		font-style: normal;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.shopdropbtn h4 {
+
+	}
+
+	.dropdown {
+ 		 position: relative;
+  		display: inline-block;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-links {
+  		display: none;
+  		position: absolute;
+ 		background-color: white;
+ 		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-links a {
+  		color: #466752;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-links a:hover {
+		background-color: #ddd;
+	}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-links {
+		display: block;
+	}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .shopdropbtn {
+		background-color: #e5f0e7;
+	}
+
+/*header styling ends......................*/
+
+/*footer styling.............................*/
+	footer {
+			display: flex;
+			flex-direction: row;
+			justify-content:center;
+			background-color: white;
+			padding: 10px;
+			margin-right: 0;
+			margin: 0;
+			text-align:center;
+			background-color: #E5F0E7;
+
+	}
+
+	.socials {
+		padding: 20px;
+		margin: 0 auto;
+		background-color: #E5F0E7;
+			
+	}
+	.fa-instagram, .fa-facebook-square {
+		font-size: 2.1em;
+		color: white;
+
+	}
+
+	.fa-instagram:hover, .fa-facebook-square:hover {
+		color: #8EC8A3;
+		text-shadow: 3px 3px #C6DFCF;
+	}
+
+
+
+	.email_form {
+			display: flex;
+			padding: 10px;
+			justify-content: center;
+			margin: 0 auto;
+			
+			
+		}
+
+	fieldset {
+		border: none;
+		align-items: center;
+
+	}
+
+	input {
+		border:none;
+		background-color: white;
+		margin:3%;
+	}
+
+	.emailformdesc {
+		
+
+	}
+
+	.emailformbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+
+	.formbox {
+		display: flex;
+		flex-direction: row;
+		margin-right: 5%;
+
+	}
+	.formbox p {
+		flex-direction: column;
+	}
+
+	.newslettersend {
+		background-color: white;
+		border: none;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  		height: 5%;
+  		width: 30%;
+  		text-align: center;
+  		margin:0 auto; 	 	
+  		padding: 1%;
+  		text-align: center;
+  		margin: 0 auto;
+  		border-radius: 12px; 
+  		text-decoration: none;
+	}
+
+	.newslettersend:hover {
+		padding: 0.8%;
+		transition-delay: .5s;
+	}
+
+	.copyright p {
+		padding-top: .5%;
+		font-size: .7em;
+
+	}
+
+/*footer styling ends...............................*/
+
+
+/*text styling.........................*/
+
+	
+	h1/*quote text*/{
+		font-family: p22-underground-pc, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 2em;
+	}
+
+	h2 /*contact form*/{
+		font-family: p22-underground-pc, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 1em;
+	
+	}
+
+	h3 /*home page text*/{
+		font-family: p22-underground-pc, sans-serif;
+		text-align: center;
+		font-weight: 400;
+	
+	}
+
+	h4 /*nav pages headings*/ {
+		font-family: p22-underground-pc, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 1.2em;
+	}
+
+	h5/*brandname for shop page*/{
+		font-family: p22-underground-pc, sans-serif;
+		font-weight: 400;
+		color: #466752;
+		font-size: 1.4em;
+	
+	}
+
+	h6 /*small body text*/{
+		font-family: p22-underground, sans-serif;
+		text-align: center;
+		font-size: .8em;
+		font-weight: 600;
+	}
+
+	p/*body text*/{
+		font-family: p22-underground, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 1em;
+	
+	}
+
+/*text styling ends.........................*/
+
+/*Home Page Styling.........................*/
+
+	.quote {
+		visibility: hidden;
+	}
+
+	.homemain {
+		padding-top:1%;
+		
+	}
+
+	.heroimg {
+		justify-content: center;
+		margin: 0 auto;
+		background-image:url(../img/herooo.jpg);
+		width: 75vw;
+		height: 40vw;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		border: solid 15px white;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+
+	}
+
+	.maintext {
+		padding-top: 4%; 
+		padding-bottom: 4%;
+	}
+
+	.maintext p {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.cta_home {
+
+	}
+/*Home Page Styling ends.........................*/
+
+
+/*services Page Styling.........................*/
+	
+	.servicesintro {
+		width: 90vw;
+		background-color: #e5f0e7;
+		padding: 4%;
+		margin-bottom: 3%;
+		
+
+	}
+	.servicesdesc {
+		text-align: center;
+		justify-content: center;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.servicesdesc h6 {
+		font-size: .9em;
+		font-weight: 400;
+	}
+
+	.cta_contact {
+		background-color: #e5f0e7;
+		padding: 3%;
+		margin-bottom: 2%;
+
+	}
+
+	.cta_contact a h6:hover {
+		padding: 0.8%;
+		transition-delay: .5s;
+	}
+
+	.cta_contact a h6{
+ 	 	background-color: white; 
+ 	 	width: 20%;
+  		padding: 1%;
+  		text-align: center;
+  		margin: 0 auto;
+  		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  			
+ 	 	border-radius: 9px; 
+  		border: none;
+  		text-align: center;
+  		text-decoration: none;
+  		justify-content: center;
+		}
+
+	.servicestitle {
+		text-align: center;
+		margin-bottom: 1%;
+
+	}
+
+	.services {
+		display: flex;
+		flex-direction: row;
+		width: 85%;
+		margin:0 auto;
+		justify-content: space-between;
+		margin-bottom: 2%;
+
+	}
+	.events, .content_creation, .kombucha_workshops {
+		width: 30%;
+		background-color: white;
+		padding: .8%;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+
+
+	}
+
+	.event_img {
+		background-image:url(../img/events.jpg);
+		width: 100%;
+		height:300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.content_creation_img {
+		background-image:url(../img/content.jpg);
+		width: 100%;
+		height:300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.kombucha_img {
+		background-image:url(../img/kombucha2.jpg);
+		width: 100%;
+		height:300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.events_desc, .content_creation_desc, .kombucha_desc {
+		padding-top: 6%;
+		padding-bottom: 5%;
+		text-align: center;
+
+	}
+
+	.events_desc p, .content_creation_desc p, .kombucha_desc p {
+		padding-top: 2%;
+
+	}
+
+/*Services Page Styling ends.........................*/
+
+
+/*About Page Styling.........................*/
+
+	.about {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0 auto;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		background-color: #e5f0e7;
+		justify-content: center;
+	}
+
+	.aboutimg {
+		background-image:url(../img/kates.jpg);
+		width: 40%;
+		height:25vw;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-left: 3%;
+		border: solid 15px white;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+	}
+
+	.abouttitle {
+		text-align: center;
+		padding-bottom: 3%;
+	}
+	.abouttitle  {
+		font-size: 1.6em;	
+	}
+
+	.aboutdesc {
+		width: 35%;
+		
+	}
+	.cta_getintouchbutton:hover {
+		padding: 1.8%;
+		transition-delay: .5s;
+	}
+
+	.cta_getintouchbutton {
+ 	 	background-color: white; 
+ 	 	width: 30%;
+ 	 	border-radius: 6px; 
+  		border: none;
+  		padding: 2%;
+  		text-align: center;
+  		text-decoration: none;
+  		justify-content: center;
+  		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  			margin-top: 3%;
+  		
+		}
+
+
+	.teamintro {
+		padding:4%;
+		padding-bottom: 2%;
+		text-align: center;
+		height: 10%
+	}
+
+	.teamintro h5 {
+		font-size: 1.7em;	
+	}
+
+	.team {
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+		align-items: center;
+		margin: 0 auto;
+		width: 95%;
+		justify-content: center;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin-bottom: 5%;
+		}
+
+	.tim, .georgia, .chai {
+		width: 25%;
+		min-height: 50vh;
+		padding:1%;
+		margin: 1%;
+		background-color: white;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+	}
+
+	.timimg, .georgiaimg,.chaiimg{
+		width: 100%;
+		height:15vw;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
+
+	.timimg {
+		background-image:url(../img/tim3.jpg);
+		
+	}
+
+	.georgiaimg {
+		background-image:url(../img/georgia3.jpg);
+		background-position: top;
+
+	}
+
+	.chaiimg {
+		background-image:url(../img/chai6.jpg);
+	}
+
+	.timdesc, .georgiadesc, .chaidesc {
+			width: 95%;
+			height:40%;
+			padding: 2%;
+			padding-top: 5%;
+			text-align: center;
+
+		}
+/*About Page Styling Ends.........................*/
+
+/*Contact Page styling.........................*/
+
+	.contactform {
+		background-color:#e5f0e7;
+		width: 60%;
+		align-content: center;
+		margin: 0 auto;
+		padding: 5%;
+		border:solid 4px #F7F9F7;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  		margin-bottom: 5%;
+	}
+
+	.contactform h1{
+		text-align: center;
+		margin-bottom: 4%;
+	}
+
+	form {
+		justify-content: center;
+		display: flex;
+		flex-direction: row;
+		
+	}
+
+	.subject {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contactmessage {
+		display: flex;
+		flex-direction: row;
+	}
+	.sendbutton {
+		background-color: white;
+		border: none;
+		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  			height: 30px;
+  			width: 80px;
+  			justify-content:center;
+  			margin: 0 auto;
+  			text-align: center;
+  			margin-top:3%;
+  			border-radius: 12px;
+  			padding: 1%;
+  			
+
+  		}
+
+
+	
+
+	.sendbutton1 {
+		background-color: rgba(0,0,0,0);
+	}
+
+/*Contact Page styling ends.........................*/
+
+
+/*Shop Page Styling .........................*/
+	.shopopening {
+		padding: 3%;
+		background-color: #E5F0E7;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	.shopdesc {
+		padding-top: 1%;
+		text-align:center;
+		
+	}
+
+	.brandname {
+		text-align:center;
+		padding: 3%;
+	}
+
+	.clothingdesc {
+		padding: 3%;
+		background-color: #E3EEE7;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	.exploretitle {
+		text-align:center;
+		padding: 3%;
+		margin-bottom:1%;
+		background-color: #E3EEE7;
+	}
+
+	.exploretitle a h3:hover {
+		padding: 0.8%;
+		transition-delay: .5s;
+	}
+
+	.exploretitle a h3{
+ 	 	background-color: white; 
+ 	 	width: 20%;
+  		padding: 1%;
+  		text-align: center;
+  		margin: 0 auto;
+  		box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  			
+ 	 	border-radius: 9px; 
+  		border: none;
+  		text-align: center;
+  		text-decoration: none;
+  		justify-content: center;
+		}
+
+	.clothingtitle, .handltitle, .beautytitle{
+		text-align:center;
+		padding: 1%;
+		background-color: #E3EEE7 ;
+	
+	}
+
+	.overlay {
+  		position: absolute;
+  		bottom: 18%;
+  		background-color: rgba(255,255,255, 0.9); 
+  		width: 100%;
+  		transition: .5s ease;
+  		opacity:0;
+  		color: #305737;
+  		font-size: 20px;
+  		padding-top: 2%;
+  		padding-bottom: 2%;
+ 		text-align: center;
+	}
+
+		.albumn a:hover .overlay {
+ 			 opacity: 1;
+		}
+		.albumn {
+			background-color: #F4FFF6;
+			justify-content:center;
+    		width:90%;
+    		display:flex;
+    		flex-wrap: wrap;
+    		margin: 0 auto;
+    		padding-bottom: 3%;
+		}
+		.albumn a {
+			position: relative;
+			width:27%;
+			height:18vw;
+			margin: 2%;
+			margin-bottom: 2%; 
+		}
+
+		.imgbox {
+			width:100%;
+			height: 85%;
+			background-color: white;
+			background-size: cover;
+			background-position: top;
+			border: solid 5px white;
+			box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+		}
+
+		.imgbox:hover {
+			
+			filter: blur(1px); 
+		}
+
+		#clothingshop, #beautyshop, #handlshop {
+			
+			
+
+		}
+
+		#clothingshop:hover, #beautyshop:hover, #handlshop:hover {
+			border: solid 7px white;
+		}
+
+
+/*images.......*/
+
+		
+		#clothingshop {
+			background-image: url(../img/kate.jpg);
+			background-position: center;
+		}
+
+		#beautyshop {
+			background-image: url(../img/angesandme.jpg);
+			background-position: center;
+
+		}
+
+		#handlshop {
+			background-image: url(../img/handl.jpg);
+			background-position: center;
+
+		}
+
+		#citizenwolf {
+			background-image: url(../img/citizenwolf.jpg);
+			background-position: center;
+		}
+
+		#loishazel {
+			background-image: url(../img/loisandhazel.jpg);
+			background-position: center;
+	
+		}
+
+		#tamgadesigns {
+			background-image: url(../img/tamgadesigns.jpg);
+
+		}
+
+		#tonicandcloth {
+			background-image: url(../img/tonicandcloth.jpeg);
+			background-position: center;
+
+		}
+
+		#livingfibresnz {
+			background-image: url(../img/livingfibres.png);
+			background-position: top;
+		}
+
+		#holiboli {
+			background-image: url(../img/holiboli.jpg);
+
+		}
+
+		#sanct {
+			background-image: url(../img/sanct.jpg);
+			background-position: center;
+		}
+
+		#zone {
+			background-image: url(../img/zone.jpg);
+		}
+
+		#sustainabilityhoisery {
+			background-image: url(../img/sustainablehoisery.jpg);
+			background-position: bottom;
+		}
+
+		#essethelabel {
+			background-image: url(../img/essethelabel.jpg);
+
+		}
+
+		#recreateclothin {
+			background-image: url(../img/recreateclothin.jpg);
+		}
+
+		#sooti {
+			background-image: url(../img/sooti.jpg);
+			background-position: center;
+
+		}
+
+	/*beauty img...................................................*/
+
+		#angesandme {
+			background-image: url(../img/angesandme.jpg);
+
+		}
+
+		#ethique {
+			background-image: url(../img/ethique.jpg);
+
+		}
+
+		#ecowarehouse {
+			background-image: url(../img/ecowarehouse.jpg);
+
+		}
+
+		#theecobrush {
+			background-image: url(../img/theecobrush.jpg);
+
+		}
+
+		#alephbeauty {
+			background-image: url(../img/alephbeauty.jpg);
+			background-position: center;
+		}
+
+		#thenaturalco {
+			background-image: url(../img/thenaturalco.jpg);
+			background-position: center;
+		}
+
+		#floraandfauna {
+			background-image: url(../img/floraandfauna.png);
+
+		}
+
+		#beefresh {
+			background-image: url(../img/beefresh.jpg);
+			background-position: center;
+		}
+
+		#corbinroad {
+			background-image: url(../img/corbinrd.jpg);
+			background-position: center;
+		}
+
+		#ohnatural {
+			background-image: url(../img/ohnatural.jpg);
+			background-position: center;
+		}
+
+		#biddyandmay {
+			background-image: url(../img/biddyandmay.jpg);
+			background-position: center;
+		}
+
+		#itsorganicdarling {
+			background-image: url(../img/itsorganicdarling.jpg);
+			background-position: center;
+		}
+
+	/*home and living img........................*/
+		#bhumi {
+			background-image: url(../img/bhumi.jpg);
+			background-position: center;
+
+		}
+
+		#theminimalco {
+			background-image: url(../img/theminimalco.jpg);
+
+		}
+
+		#figgyandco {
+			background-image: url(../img/figgyandco.jpg);
+
+		}
+
+		
+
+		#composic {
+			background-image: url(../img/composic.jpg);
+			background-position: center;
+
+		}
+
+		#dailyrefil {
+			background-image: url(../img/dailyrefil.jpg);
+			background-position: center;
+
+		}
+
+		#caliwoods {
+			background-image: url(../img/caliwoods.jpeg);
+			background-position: center;
+
+		}
+
+		#conscious {
+			background-image: url(../img/conscious.jpg);
+			background-position: top;
+
+		}
+
+		#feedmyfurbaby {
+			background-image: url(../img/feedmyfurbaby.jpg);
+
+		}
+
+		#limberdesk {
+			background-image: url(../img/limberdesk.jpg);
+			background-position: center;
+		}
+
+/*Shop Page Styling Ends.........................*/
+
+/*Blog page styling..........................*/
+		.blogtypes-wrapper {
+			padding: 3%;
+			background-color: #E5F0E7;
+		}
+
+		.blogtypes-wrapper h5{
+			text-align: center;
+			font-size: 2em;
+		}
+
+		.blogtypes-wrapper p{
+			text-align: center;
+			padding-top: 2%;
+		}
+
+		.blogs {
+			width: 85%;
+			margin: 0 auto;
+			margin-bottom: 3%;
+		}
+
+		.blogtypes {
+    		display: flex;
+    		flex-direction: row;
+    		padding-top: 1%;
+    		padding-bottom: 3%;
+			
+		}
+
+		.blogtypes a {
+			width:30%;
+    		height: 20vw;
+    		margin: 1%;  		 
+		}
+
+		#katesworld:hover, #elsewhere:hover, #all:hover {
+			border: solid 8px white;
+		}
+
+
+		#katesworld, #elsewhere, #all  {
+			width: 100%;
+			height: 90%;
+			background-size: cover;
+			background-position: bottom;
+			border: solid 10px white;
+			box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+			
+		}
+
+		#katesworld {
+			background-image: url(../img/autumn.jpg);
+
+		}
+
+		#elsewhere {
+			background-image: url(../img/house.jpg);
+		}
+
+		#all {
+			background-image: url(../img/blanket.jpg);
+		}
+
+		.cta_sustainableshopping {
+			padding: 3%;
+			background-color: #E5F0E7;
+			justify-content: center;
+
+		}
+
+		.cta_sustainableshopping h3{
+			background-color: white; 
+ 	 		border-radius: 6px; 
+  			border: none;
+  			width: 25%;
+  			padding:.5%;
+  			text-align: center;
+  			text-decoration: none;
+  			box-shadow:
+  			0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  			0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  			0 12.5px 10px rgba(0, 0, 0, 0.06),
+  			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+ 			0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  			0 100px 80px rgba(0, 0, 0, 0.12);
+  			margin:0 auto ;
+
+		}
+
+/*Blog page styling..........................*/
+
+
+
+
+/*.........media quirie starts here...................................................................................*/
+
+@media screen and (max-width:767px) {
+
+	body {
+			font-size: 13px;
+		}
+
+	/*...Header....................................*/
+
+		header {
+			height: 20vh;
+		}
+
+		nav ul {
+			position: fixed;
+			top: 20%;
+			left:0;
+			width: 100vw;
+			background-color: rgba(255,255,255,0.9);
+			flex-direction: column;
+			display: none;
+			backdrop-filter:blur(5px);
+			z-index: 9;
+		}
+
+		.links.responsive {
+			display: block;
+		}
+
+		.currentpage{
+			color: #7FCC9B!important;
+			font-size: 2.1em!important; 	
+			text-decoration: underline;	
+		}
+
+		nav ul li {
+			padding: 0;
+			margin-top: 3%;
+		}
+
+		nav ul li h4{
+			font-size: 2em;
+		}
+
+		.icon {
+			display:block;
+		}
+
+
+		.fa-bars {
+			margin-left: 25vw;
+			padding-top: 10%;
+		}
+
+		.logo {
+		width: 20vw;
+		height:25vh;
+		right: 0;
+		left: 35%;
+		}
+	/*...Header ends....................................*/
+
+	/*...Footer....................................*/
+		.email_form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.fa-instagram, .fa-facebook-square {
+		font-size: 2.5em;
+		color: #7fcc9b;
+		}
+
+		.footer {
+			width: 100vw;
+			
+			
+		}
+	/*...Footer ends....................................*/
+
+
+	/*Home Page Styling.........................*/
+		.heroimg {
+			width: 90vw;
+			height: 40vh;
+			border: solid white 5px;
+		}
+
+		.homemain {
+			width: 90vw;
+			margin:0 auto;
+		}
+
+		.maintext {
+			padding-top: 8%;
+			padding-bottom: 8%;
+		}
+	/*Home Page Styling ends.........................*/
+
+	/*About Page Styling.............................*/
+		.about {
+			flex-direction: column;
+		}
+
+		.aboutimg {
+			width: 80%;
+			height: 35vh;
+			margin-top: 5%;
+		}
+
+		.aboutdesc {
+			width: 75%;
+		}
+
+		.team {
+			flex-direction: column;
+			justify-content: left;
+			
+		}
+
+		.tim, .georgia, .chai {
+			width: 80%;
+			min-height: 15px;
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 2%;
+			margin-bottom: 5%
+		}
+
+		.timimg, .georgiaimg,.chaiimg {
+			height:25vh;
+		}
+
+		.timdesc h6, .georgiadesc h6, .chaidesc h6 {
+			font-size: 1em;
+		}
+
+		.timtext, .georgiatext, .chaitext {
+			flex-direction: column;
+			padding-top: 7px;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+
+		.timimg {
+			background-image: url(../img/tim3.jpg);
+			background-position: top;
+			width: 97%;
+			justify-content: center;
+			margin:0 auto;
+			margin-top: 4px;
+		}
+
+	/*Services Page Styling............................*/	
+		.services {
+			flex-direction: column;
+		}
+
+		.events, .content_creation, .kombucha_workshops {
+			width: 100%;
+			margin-bottom: 5%;
+			padding: 3%;
+		}
+
+		.cta_contact a h6{
+ 	 		width: 60%;
+  			padding: 3%;
+  			font-size: 1.2em;
+		}
+
+		.cta_contact a h6:hover {
+			padding: 2.8%;
+			transition-delay: .5s;
+		}
+
+	/*Blog page styling...............*/
+
+		.blogtypes {
+			flex-direction: column;
+		}
+
+		.blogtypes a {
+			width: 100%;
+			height: 30vh;
+		}
+
+		#katesworld, #elsewhere, #all  {
+			background-position: center;
+		}
+
+		.blogtypes a {
+    		margin-bottom: 10%; 
+    	}
+
+		.cta_sustainableshopping h3{
+  			width: 60%;
+  			padding: 1%;
+  			font-size: 1.5em;
+
+		}
+
+		.cta_sustainableshopping {
+			margin-bottom: 3%;
+		}
+	/*Blog page styling...............*/
+
+	/*Shop page styling...............*/
+		.albumn {
+			flex-direction: column;
+		}
+
+		.albumn a {
+			width:100%;
+			height:50vw; 
+		}
+
+		#clothingshop {
+			background-position: bottom;
+		}
+
+		.albumn a {
+			margin-bottom: 5%;
+		}
+		.shopdesc {
+			margin-bottom: 25px;
+		}
+	/*Shop page styling ends...............*/
+
+	/*Contact page styling..............*/
+
+		form {
+			flex-direction: column;
+		}
+
+		.contactform {
+			width: 80%;
+			padding: 5%;
+			margin-top: 10%;
+  			margin-bottom: 10%;
+		}
+
+		.sendbutton {
+			margin-left: 3%;
+		}
+
+	/*Contact page Styling ends...........*/
+}
+
+@media screen and (max-width:480px) {
+
+		header {
+			height: 15vh;
+		}
+
+		nav ul {
+			top: 15%;
+		}
+
+		.logo {
+			width: 30vw;
+			height:35vh;
+			right: 0;
+			left: 34%;
+		}
+}
+
+
+/*.........media quiries ends here.........*/
